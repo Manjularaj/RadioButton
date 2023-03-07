@@ -1,0 +1,29 @@
+﻿<Window x:Class="RadioButton.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RadioButton"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="btnCheckBoxResult" Height="360" VerticalAlignment="Top" Background="#FF14CF99">
+        <Canvas RenderTransformOrigin="0.503,0.356" Margin="74,127,499,10" Background="#FFD44D16">
+            <CheckBox x:Name="CkMushroom" Content="Mushroom" Width="130" Height="17" FontFamily="Algerian" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" Canvas.Top="79" VerticalAlignment="Top" Foreground="#FFC29728"/>
+            <CheckBox x:Name="CkPineapple" Content="Pineapple" Width="130" Height="16" FontFamily="Algerian" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" Canvas.Top="112" VerticalAlignment="Top" Foreground="#FFE3DF24"/>
+            <CheckBox x:Name="CkCheese" Content="CheESE" Width="130" Height="17" FontFamily="Algerian" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" Canvas.Top="45" VerticalAlignment="Top" Foreground="#FFF7EDED"/>
+            <Button x:Name="btnOrderPizza" Content="Order Pizza" Canvas.Left="10" Canvas.Top="152" HorizontalAlignment="Center" VerticalAlignment="Top" Width="120" Height="24" FontWeight="Bold" FontFamily="Felix Titling" Click="btnOrderPizza_Click"/>
+        </Canvas>
+        <CheckBox x:Name="CkFirstCheckBox" Content="First check Box" HorizontalAlignment="Left" Margin="74,33,0,0" VerticalAlignment="Top" Height="30" Width="157" FontWeight="Bold" FontSize="16"/>
+        <Button x:Name="btnCheckBoxResult1" Content="Show Check Box Result" HorizontalAlignment="Left" Margin="74,72,0,0" VerticalAlignment="Top" Width="204" Height="29" FontSize="16" FontWeight="Bold" Click="btnCheckBoxResult1_Click"/>
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="667,78,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="CkCorn" Content="Corn" HorizontalAlignment="Left" Margin="74,141,0,0" VerticalAlignment="Top" Width="130" Height="17" FontFamily="Algerian" FontSize="16" FontWeight="Bold" Foreground="#FFC5C130"/>
+        <RichTextBox Margin="455,112,122,74">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name ="runReciept" Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
+    </Grid>
+</Window>
