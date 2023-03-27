@@ -36,8 +36,14 @@ namespace RadioButton
         private void btnOrderPizza_Click(object sender, RoutedEventArgs e)
         {
             runReciept.Text = "";
+            
             bool hasCorn = CkCorn.IsChecked.Value;
-            runReciept.Text += hasCorn;
+
+            if(hasCorn == true)
+            {
+                runReciept.Text += "Corn";
+            }
+            
       
         }
 
