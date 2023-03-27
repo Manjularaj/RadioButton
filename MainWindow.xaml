@@ -6,24 +6,39 @@
         xmlns:local="clr-namespace:RadioButton"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid x:Name="btnCheckBoxResult" Height="360" VerticalAlignment="Top" Background="#FF14CF99">
-        <Canvas RenderTransformOrigin="0.503,0.356" Margin="74,127,499,10" Background="#FFD44D16">
-            <CheckBox x:Name="CkMushroom" Content="Mushroom" Width="130" Height="17" FontFamily="Algerian" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" Canvas.Top="79" VerticalAlignment="Top" Foreground="#FFC29728"/>
-            <CheckBox x:Name="CkPineapple" Content="Pineapple" Width="130" Height="16" FontFamily="Algerian" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" Canvas.Top="112" VerticalAlignment="Top" Foreground="#FFE3DF24"/>
-            <CheckBox x:Name="CkCheese" Content="CheESE" Width="130" Height="17" FontFamily="Algerian" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" Canvas.Top="45" VerticalAlignment="Top" Foreground="#FFF7EDED"/>
-            <Button x:Name="btnOrderPizza" Content="Order Pizza" Canvas.Left="10" Canvas.Top="152" HorizontalAlignment="Center" VerticalAlignment="Top" Width="120" Height="24" FontWeight="Bold" FontFamily="Felix Titling" Click="btnOrderPizza_Click"/>
+    <Grid x:Name="btnCheckBoxResult" Height="440" VerticalAlignment="Top" Background="#FF14CF99" Margin="10,0,0,0">
+        <Canvas RenderTransformOrigin="0.503,0.356" Margin="524,172,28,49" Background="#FFD44D16">
+            <CheckBox x:Name="CkMushroom" Content="Mushroom -$2" Width="169" Height="28" FontFamily="Algerian" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" Canvas.Top="79" VerticalAlignment="Top" Foreground="#FFC29728"/>
+            <CheckBox x:Name="CkPineapple" Content="Pineapple - $20" Width="175" Height="16" FontFamily="Algerian" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" Canvas.Top="112" VerticalAlignment="Center" Foreground="#FFE3DF24"/>
+            <CheckBox x:Name="CkCheese" Content="CheESE - $5" Width="130" Height="17" FontFamily="Algerian" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" Canvas.Top="45" VerticalAlignment="Top" Foreground="#FFF7EDED"/>
+            <Button x:Name="btnOrderPizza" Content="Order Pizza" Canvas.Left="10" Canvas.Top="152" HorizontalAlignment="Center" VerticalAlignment="Top" Width="120" Height="24" FontWeight="Bold" FontFamily="Felix Titling"/>
         </Canvas>
         <CheckBox x:Name="CkFirstCheckBox" Content="First check Box" HorizontalAlignment="Left" Margin="74,33,0,0" VerticalAlignment="Top" Height="30" Width="157" FontWeight="Bold" FontSize="16"/>
         <Button x:Name="btnCheckBoxResult1" Content="Show Check Box Result" HorizontalAlignment="Left" Margin="74,72,0,0" VerticalAlignment="Top" Width="204" Height="29" FontSize="16" FontWeight="Bold" Click="btnCheckBoxResult1_Click"/>
-        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="667,78,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="CkCorn" Content="Corn" HorizontalAlignment="Left" Margin="74,141,0,0" VerticalAlignment="Top" Width="130" Height="17" FontFamily="Algerian" FontSize="16" FontWeight="Bold" Foreground="#FFC5C130"/>
-        <RichTextBox Margin="455,112,122,74">
+        <CheckBox x:Name="CkCorn" Content="Corn - $4" HorizontalAlignment="Left" Margin="527,190,0,0" VerticalAlignment="Top" Width="107" Height="16" FontFamily="Algerian" FontSize="16" FontWeight="Bold" Foreground="#FFC5C130"/>
+        <RichTextBox Margin="306,33,271,10">
             <FlowDocument>
                 <Paragraph>
                     <Run x:Name ="runReciept" Text="RichTextBox"/>
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
+        <Canvas RenderTransformOrigin="0.503,0.356" Margin="524,10,28,289" Background="#FFD44D16">
+            <RadioButton x:Name="rbSmall" Content="Small - $13" Height="23" Width="175" HorizontalAlignment="Left" Canvas.Left="10" Canvas.Top="36" VerticalAlignment="Center" FontSize="18"/>
+            <RadioButton x:Name="rbMedium" Content="Medium - $15" Height="23" Width="173" Canvas.Left="12" Canvas.Top="64" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="18"/>
+            <RadioButton x:Name="rbLarge" Content="Large - $18" Height="23" Width="173" Canvas.Left="12" Canvas.Top="87" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <RadioButton x:Name="rbExtraLarge" Content="Extra Large - $20" Height="23" Width="171" Canvas.Left="14" Canvas.Top="115" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        </Canvas>
+        <Canvas RenderTransformOrigin="0.503,0.356" Margin="57,172,495,49" Background="#FFD44D16">
+            <RadioButton x:Name="rbDrinkSmall" Content=" Small - $2" Height="23" Width="175" HorizontalAlignment="Left" Canvas.Left="10" Canvas.Top="36" VerticalAlignment="Center" FontSize="18"/>
+            <RadioButton x:Name="rbDrinkMedium" Content="Medium - $2.69" Height="23" Width="173" Canvas.Left="12" Canvas.Top="64" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="18"/>
+            <RadioButton x:Name="rbDrinkLarge" Content="Large - $3.25" Height="23" Width="173" Canvas.Left="12" Canvas.Top="87" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <RadioButton x:Name="rbDrinkExtraLarge" Content="Extra Large - $7.50" Height="23" Width="171" Canvas.Left="14" Canvas.Top="115" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label Content="DRINKS" Canvas.Left="60" Canvas.Top="5" HorizontalAlignment="Left" VerticalAlignment="Center" Width="125"/>
+            <Label Content="PIZZA SIZE" Canvas.Left="515" Canvas.Top="-156" Width="125" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        </Canvas>
+        <Label Content="Customer Name" HorizontalAlignment="Left" Margin="74,106,0,0" VerticalAlignment="Top" Width="137"/>
+        <TextBox x:Name="txtCustomerName" HorizontalAlignment="Left" Margin="74,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" Height="30"/>
 
     </Grid>
 </Window>
